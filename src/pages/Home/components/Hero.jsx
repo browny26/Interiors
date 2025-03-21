@@ -3,20 +3,23 @@ import { Button } from "../../../components/Button";
 import { Title } from "../../../components/Title";
 import { Statistics } from "../../../components/Statistics";
 import { ArrowDown } from "react-bootstrap-icons";
+import { Blob } from "../../../components/Blob";
 
 export const Hero = () => {
   return (
     <section
       style={{ height: "calc(100dvh - 80.8px)" }}
-      className="flex justify-between items-center"
+      className="relative flex justify-between items-center"
     >
-      <div className="flex flex-col gap-10 flex-1">
+      <Blob position="-left-64" />
+      <div className="z-20 flex flex-col gap-10 flex-1">
         <Title
           title={"Innate Interiors"}
           subtitle={
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pulvinar nulla eu auctor posuere. Duis eget elementum lectus. Duis condimentum ultrices dictum. Mauris accumsan commodo rhoncus. "
           }
           header="h1"
+          weight="medium"
         />
         <Button text={"Start Project"} />
         <div className="flex gap-16">
