@@ -34,8 +34,12 @@ export const Services = () => {
           />
         </ServicesCards>
       </section>
-      <section className="flex gap-20 py-20">
-        <img src="/image_3.png" alt="image" className="w-[660px]" />
+      <section className="flex flex-col lg:flex-row gap-20 py-20">
+        <img
+          src="/image_3.png"
+          alt="image"
+          className="w-full h-[200px] lg:w-[660px] object-cover object-bottom"
+        />
         <div className="flex flex-col gap-16">
           <Title
             title={"Designing Your Dream With Blilliance"}
@@ -66,7 +70,7 @@ export const Services = () => {
           <Button text={"Learn More"} />
         </div>
       </section>
-      <section className="flex justify-between gap-36 my-20">
+      <section className="flex flex-col-reverse lg:flex-row justify-between gap-36 my-20">
         <div className="flex flex-col gap-16">
           <Title title={"Designing Your Dream In Three Simple Steps"} />
           <Steps>
@@ -93,7 +97,10 @@ export const Services = () => {
             />
           </Steps>
         </div>
-        <img src="/image_4.png" className="w-[765px]" />
+        <img
+          src="/image_4.png"
+          className="w-full h-[200px] lg:w-[765px] object-cover object-bottom"
+        />
       </section>
     </>
   );

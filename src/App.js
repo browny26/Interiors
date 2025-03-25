@@ -2,6 +2,7 @@ import { RouterProvider } from "react-router-dom";
 import router from "./routes";
 import { Navbar } from "./components/Navbar";
 import { Container } from "./components/Container";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Navbar />
         <RouterProvider router={router} />
       </Container>
+      <Footer />
     </div>
   );
 }

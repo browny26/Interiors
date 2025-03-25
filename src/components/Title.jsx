@@ -1,10 +1,30 @@
 import React from "react";
 
-export const Title = ({ title, subtitle, header = "h3", weight = "bold" }) => {
+export const Title = ({
+  title,
+  subtitle,
+  header = "h3",
+  weight = "bold",
+  centered = false,
+}) => {
   return (
     <div className="flex flex-col gap-8">
-      <h1 className={`text-${header} font-kansei font-${weight}`}>{title}</h1>
-      {subtitle && <p className="font-light leading-[150%]">{subtitle}</p>}
+      <h1
+        className={`text-${header} font-kansei ${
+          centered == true ? "text-center" : ""
+        } font-${weight}`}
+      >
+        {title}
+      </h1>
+      {subtitle && (
+        <p
+          className={`font-light leading-[150%] ${
+            centered == true ? "text-center" : ""
+          }`}
+        >
+          {subtitle}
+        </p>
+      )}
     </div>
   );
 };

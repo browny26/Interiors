@@ -28,7 +28,7 @@ export const Hero = () => {
           <Statistics number={"100"} description={"Projects Complited"} />
         </div>
       </div>
-      <div className="flex-1 relative h-full">
+      <div className="hidden lg:block flex-1 relative h-full">
         <img
           src="/image_1.png"
           alt="img"
